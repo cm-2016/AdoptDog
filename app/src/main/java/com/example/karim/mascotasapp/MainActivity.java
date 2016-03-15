@@ -8,6 +8,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 
 import android.support.v4.app.Fragment;
+import android.support.v4.app.ListFragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
 import android.support.v4.view.ViewPager;
@@ -20,8 +21,10 @@ import android.view.ViewGroup;
 
 import android.widget.TextView;
 
-public class MainActivity extends AppCompatActivity implements ListFragment.OnFragmentInteractionListener,
-        PassportFragment.OnFragmentInteractionListener, MapFragment.OnFragmentInteractionListener {
+import com.parse.Parse;
+
+public class MainActivity extends AppCompatActivity implements LstFragment.OnFragmentInteractionListener,
+        PassportFragment.OnFragmentInteractionListener, MpFragment.OnFragmentInteractionListener, DivFragment.OnFragmentInteractionListener {
 
     /**
      * The {@link android.support.v4.view.PagerAdapter} that will provide
@@ -55,6 +58,8 @@ public class MainActivity extends AppCompatActivity implements ListFragment.OnFr
 
         TabLayout tabLayout = (TabLayout) findViewById(R.id.tabs);
         tabLayout.setupWithViewPager(mViewPager);
+        Parse.initialize(this);
+
 
 
     }
@@ -111,7 +116,7 @@ public class MainActivity extends AppCompatActivity implements ListFragment.OnFr
             switch (sectionNumber) {
 
                 case 1:
-                    fragment = new ListFragment();
+                    fragment = new LstFragment();
                     break;
 
                 case 2:
@@ -119,7 +124,7 @@ public class MainActivity extends AppCompatActivity implements ListFragment.OnFr
                     break;
 
                 case 3:
-                    fragment = new MapFragment();
+                    fragment = new MpFragment();
                     break;
 
             }
