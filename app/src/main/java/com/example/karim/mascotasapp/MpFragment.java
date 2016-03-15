@@ -153,6 +153,27 @@ public class MpFragment extends Fragment implements OnMapReadyCallback {
         mListener = null;
     }
 
+
+    @Override
+    public void onResume() {
+        super.onResume();
+        mapView.onResume();
+
+    }
+
+    @Override
+    public void onDestroy() {
+        super.onDestroy();
+        mapView.onDestroy();
+    }
+
+
+    @Override
+    public void onPause() {
+        super.onPause();
+        mapView.onPause();
+    }
+
     @Override
     public void onMapReady(GoogleMap googleMap) {
 

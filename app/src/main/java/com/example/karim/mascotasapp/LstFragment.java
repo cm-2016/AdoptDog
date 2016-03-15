@@ -17,12 +17,14 @@ import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.example.karim.mascotasapp.adapters.MyAdapter;
 import com.example.karim.mascotasapp.api.models.Dog;
 import com.parse.FindCallback;
 import com.parse.ParseException;
 import com.parse.ParseObject;
 import com.parse.ParseQuery;
 
+import java.lang.reflect.Array;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -123,11 +125,19 @@ public class LstFragment extends ListFragment {
         protected void onPostExecute(Void aVoid) {
             super.onPostExecute(aVoid);
 
-            ArrayAdapter<String> adapter=new ArrayAdapter<String>(getActivity(),android.R.layout.simple_list_item_1);
+            ArrayList<Dog> dogList = new ArrayList<Dog>();
 
-            for (ParseObject dog : ob) {
-                adapter.add((String) dog.get("name"));
+            for (ParseObject po : ob) {
+
+                Dog dog = new Dog((String)po.get("name"), (String)po.get("Breed"));
+                dogList.add(dog);
             }
+
+            MyAdapter adapter = new MyAdapter(getActivity(), dogList);
+
+         //   ArrayAdapter<String> adapter=new ArrayAdapter<String>(getActivity(),android.R.layout.simple_list_item_1);
+
+
 
             setListAdapter(adapter);
             mProgressDialog.dismiss();
@@ -210,7 +220,6 @@ public class LstFragment extends ListFragment {
         if (onClick) {
 
 
-            new RemoteDataTask().execute();
 
             onClick = false;
 
