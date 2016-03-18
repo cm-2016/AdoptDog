@@ -1,2 +1,82 @@
 <?xml version="1.0" encoding="utf-8"?>
-<items version="2" />
+<items version="2" >
+
+    <item
+        jar="C:\Users\CRISTINA\Desktop\CM-2016\AdoptDog\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\23.2.0\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="8c108c22c99e794eff255bb34d2a461200c4cbb0">
+        <dex dex="C:\Users\CRISTINA\Desktop\CM-2016\AdoptDog\app\build\intermediates\pre-dexed\debug\com.android.support-animated-vector-drawable-23.2.0_0ddf609e35a72ef3d5357eddf00bbd93fbad6c21.jar" />
+    </item>
+    <item
+        jar="C:\Users\CRISTINA\Desktop\CM-2016\AdoptDog\app\build\intermediates\exploded-aar\com.android.support\recyclerview-v7\23.2.0\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="d4c936aa8c7d2522c82e3f1829c791d9e367f009">
+        <dex dex="C:\Users\CRISTINA\Desktop\CM-2016\AdoptDog\app\build\intermediates\pre-dexed\debug\com.android.support-recyclerview-v7-23.2.0_6ec229be7c1d6ca4ac3df5fe314b7af0e04f4586.jar" />
+    </item>
+    <item
+        jar="C:\Users\CRISTINA\Desktop\CM-2016\AdoptDog\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.2.0\jars\libs\internal_impl-23.2.0.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="6e239441500605809818997dd63b62a947195f8c">
+        <dex dex="C:\Users\CRISTINA\Desktop\CM-2016\AdoptDog\app\build\intermediates\pre-dexed\debug\internal_impl-23.2.0_864e7466d0f61748d22e62fafc5fcf7e924d6581.jar" />
+    </item>
+    <item
+        jar="C:\Users\CRISTINA\.gradle\caches\modules-2\files-2.1\com.parse.bolts\bolts-tasks\1.4.0\d85884acf6810a3bbbecb587f239005cbc846dc4\bolts-tasks-1.4.0.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="d85884acf6810a3bbbecb587f239005cbc846dc4">
+        <dex dex="C:\Users\CRISTINA\Desktop\CM-2016\AdoptDog\app\build\intermediates\pre-dexed\debug\bolts-tasks-1.4.0_4b37e61b93035e3cf69bd0d0f2a11fa523a46d2c.jar" />
+    </item>
+    <item
+        jar="C:\Users\CRISTINA\Desktop\CM-2016\AdoptDog\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.2.0\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="6e3578f92f7462d1a935a1d36173e3bdd1234976">
+        <dex dex="C:\Users\CRISTINA\Desktop\CM-2016\AdoptDog\app\build\intermediates\pre-dexed\debug\com.android.support-appcompat-v7-23.2.0_ee64d37140aea8d844c1a64d836f7049ae1deb48.jar" />
+    </item>
+    <item
+        jar="C:\Users\CRISTINA\Desktop\CM-2016\AdoptDog\app\build\intermediates\exploded-aar\com.android.support\design\23.2.0\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="1aa5b025efe97f5006f5be16d6ca67c6c3c0c0d8">
+        <dex dex="C:\Users\CRISTINA\Desktop\CM-2016\AdoptDog\app\build\intermediates\pre-dexed\debug\com.android.support-design-23.2.0_155246a6d36436cab02143729a57a8995e0b5b29.jar" />
+    </item>
+    <item
+        jar="C:\Users\CRISTINA\Desktop\CM-2016\AdoptDog\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\23.2.0\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="292a9fa091757208efa65e77eef63088247e51f3">
+        <dex dex="C:\Users\CRISTINA\Desktop\CM-2016\AdoptDog\app\build\intermediates\pre-dexed\debug\com.android.support-support-vector-drawable-23.2.0_b321bf1dffc3a9a12e3aaafb9195aff68640b299.jar" />
+    </item>
+    <item
+        jar="C:\Users\CRISTINA\AppData\Local\Android\sdk1\extras\android\m2repository\com\android\support\support-annotations\23.2.0\support-annotations-23.2.0.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="c5bf571bb10462bd90e5419ade67793f71acbc87">
+        <dex dex="C:\Users\CRISTINA\Desktop\CM-2016\AdoptDog\app\build\intermediates\pre-dexed\debug\support-annotations-23.2.0_56d2e94f17d6da074c220fa4d144dde01345df55.jar" />
+    </item>
+    <item
+        jar="C:\Users\CRISTINA\Desktop\CM-2016\AdoptDog\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.2.0\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="e5f32fa48a3eb2de0c987025c11b6e3864b634d9">
+        <dex dex="C:\Users\CRISTINA\Desktop\CM-2016\AdoptDog\app\build\intermediates\pre-dexed\debug\com.android.support-support-v4-23.2.0_6a25d1195ce09c9e8dfef47c8a448075fc19435e.jar" />
+    </item>
+    <item
+        jar="C:\Users\CRISTINA\.gradle\caches\modules-2\files-2.1\com.parse.bolts\bolts-applinks\1.4.0\8ad21bf21784dacce5f2043afb97218cc377e835\bolts-applinks-1.4.0.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="8ad21bf21784dacce5f2043afb97218cc377e835">
+        <dex dex="C:\Users\CRISTINA\Desktop\CM-2016\AdoptDog\app\build\intermediates\pre-dexed\debug\bolts-applinks-1.4.0_1d9a9d64c640af3be685292d6ff7b2fc9fb1b048.jar" />
+    </item>
+    <item
+        jar="C:\Users\CRISTINA\.gradle\caches\modules-2\files-2.1\com.parse\parse-android\1.13.0\58a7d54b6a4f28be11f0cecec93097eddf473e6f\parse-android-1.13.0.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="58a7d54b6a4f28be11f0cecec93097eddf473e6f">
+        <dex dex="C:\Users\CRISTINA\Desktop\CM-2016\AdoptDog\app\build\intermediates\pre-dexed\debug\parse-android-1.13.0_817061e612a533f676ba9348a67e1f918693dc29.jar" />
+    </item>
+
+</items>

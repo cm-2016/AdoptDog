@@ -1,12 +1,19 @@
 package com.example.karim.mascotasapp;
 
+import android.app.Fragment;
 import android.content.Context;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
 import android.net.Uri;
+import android.os.AsyncTask;
 import android.os.Bundle;
-import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
+
+import java.io.InputStream;
+import java.net.URL;
 
 
 /**
@@ -28,6 +35,8 @@ public class PassportFragment extends Fragment {
     private String mParam2;
 
     private OnFragmentInteractionListener mListener;
+
+    ImageView imageView;
 
     public PassportFragment() {
         // Required empty public constructor
@@ -58,6 +67,8 @@ public class PassportFragment extends Fragment {
             mParam1 = getArguments().getString(ARG_PARAM1);
             mParam2 = getArguments().getString(ARG_PARAM2);
         }
+
+        imageView = (ImageView) getView().findViewById(R.id.mImageView);
     }
 
     @Override
@@ -105,4 +116,41 @@ public class PassportFragment extends Fragment {
         // TODO: Update argument type and name
         void onFragmentInteraction(Uri uri);
     }
+    private Bitmap loadImageFromNetwork(String url){
+        try{
+            Bitmap bitmap = BitmapFactory.decodeStream((InputStream)new URL(url).getContent());
+            return bitmap;
+        }catch (Exception e){
+            e.printStackTrace();
+        }
+        return null;
+    }
+
+    public void BajarImagen(String str){
+        new Thread(new Runnable() {
+            public void run() {
+               final Bitmap bitmap = loadImageFromNetwork("https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRAI2vFmV4QcyWze-0x7tJTorYAhJg7-IrBlP8xQAFe7tWNhqtO");
+               imageView.post(new Runnable(){
+                   public void run (){
+                       imageView.setImageBitmap(bitmap);
+                   }
+               }) ;
+
+
+            }
+        }).start();
+    }
+
+    public void BajarImagen2(String str){
+        new DownloadImageTask().execute("https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRAI2vFmV4QcyWze-0x7tJTorYAhJg7-IrBlP8xQAFe7tWNhqtO");
+    }
+    private class DownloadImageTask extends AsyncTask<String, Void, Bitmap>{
+        protected Bitmap doInBackground(String... urls){
+            return loadImageFromNetwork(urls[0]);
+        }
+    }
+    protected void onPostExecute(Bitmap result){
+        imageView.setImageBitmap(result);
+    }
+
 }
